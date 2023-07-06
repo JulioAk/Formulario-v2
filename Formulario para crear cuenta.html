@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para crear cuenta</title>
+    <link rel="stylesheet" href="custom.css">
+    <script src="jquery-3.7.0.min.js"></script>
+    
+</head>
+
+<body>
+
+    <main class="pageform">
+
+        <div class="logo">
+            <h1 class="h1">MJSTORE</h1>
+        </div>
+
+        <h2>Crear tu cuenta</h2>
+
+        <!-- Para hacer formularios escritos -->
+        <form id="formdate" action="confimacion de envio de datos.html" method="post">
+
+            <div class="form">
+
+                <!-- Entrada "nombre" -->
+                <div class="space">
+                    <div class="scp">
+                        <div class="ancho">
+                            <label for="txtname">Nombres:</label>
+                            <div class="border">
+                                <input type="text" name="nombre" id="txtname">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- entrada 'apellido' -->
+                <div class="space">
+                    <div class="scp">
+                        <div class="ancho">
+                            <label for="txtlastname">Apellidos:</label>
+                            <div class="border">
+                                <input type="text" name="apellido" id="txtlastname">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- entrada"DNI" -->
+                <div class="space">
+                    <div class="scp">
+                        <div class="ancho">
+                            <label for="txtDNI">DNI:</label>
+                            <div class="border">
+                                <input type="tel" name="DNI" id="txtDNI">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entrada "email" -->
+                <div class="space">
+                    <div class="scp">
+                        <div class="ancho">
+                            <label for="txtemail">Email:</label>
+                            <div class="border">
+                                <input type="email" name="Correo electronico" id="txtemail"
+                                    placeholder="abcd@email.com">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- entrada "telefono" -->
+                <div class="space">
+                    <div class="scp">
+                        <div class="ancho">
+                            <label for="txttelf">Telefono/celular:</label>
+                            <div class="border">
+                                <input type="tel" name="Telf" id="txttelf">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- entrada" fecha de nacimiento -->
+                <div class="space ">
+                    <div class="scp">
+                        <div class="ancho">
+                            <label for="txtdate">Fecha de Nacimiento:</label>
+                            <div class="border">
+                                <input type="date" name="FchNacm" id="txtdate" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- entrada "categoria de interes" -->
+                <div class="space">
+                    <div class="scp">
+                        <div class="ancho">
+                            <label for="txtinteres">Categoria de Interes:</label>
+                            <div class="border">
+                                <div class="inline">
+                                    <select name="interes" id="txtinteres">
+                                        <option></option>
+                                        <option value="1">Tecnologia</option>
+                                        <option value="2">Hogar</option>
+                                        <option value="3">Belleza</option>
+                                        <option value="4">Electronica</option>
+                                    </select>
+                                </div>
+                                <div class="inline">
+                                    <div class="down">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entrada "sexo M y F" -->
+                <div class="space">
+                    <div class="scp">
+                        <p>Sexo:</p>
+                        <div class="border">
+                            <div class="inline">
+                                <select name="genero" id="genero">
+                                    <option></option>
+                                    <option value="2">Masculino</option>
+                                    <option value="3">Femenino</option>
+                                    <option value="4">Otro</option>
+                                </select>
+                            </div>
+                            <div class="inline">
+                                <div class="down">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- entrada "direccion" -->
+                <div class="space">
+                    <div class="scp">
+                        <div class="ancho">
+                            <label for="txtdirec">Direccion:</label>
+                            <div class="border">
+                                <input class="50UP" type="text" name="direccion" id="txtdirec">
+                            </div>
+                            <div class="border">
+                                <input class="50UP" type="text" name="direccion" id="txtdirec">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entrada " usuario" -->
+                <div class="space-2 ">
+                    <div class="scp">
+                        <div class="ancho">
+                            <label for="txtuser">Usuario:</label>
+                            <div class="border">
+                                <input type="text" name="User" id="txtuser">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- entrada "contraseña" -->
+                <div class="space">
+                    <div class="scp">
+                        <div class="ancho">
+                            <label for="txtpassword">Contraseña:</label>
+                            <div class="border">
+                                <input type="password" name="past" id="password">
+                            </div>
+                            <span id="error-password" class="error-text"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- entrada "repetir contraseña" -->
+                <div class="space">
+                    <div class="scp">
+                        <div class="ancho">
+                            <label for="repeatpassword">Repetir Contraseña:</label>
+                            <div class="border">
+                                <input type="password" name="repeat-pass" id="repeatpassword">
+                            </div>
+                        </div>
+                    </div>
+                    <span id="error-password" class="error-text"></span>
+                </div>
+
+            </div>
+
+            <!-- terminos y condicones -->
+            <div class="term">
+                <input type="checkbox" onclick="agreesubmit(this)" name="condiciones" id="" required>
+                Estoy de acuerdo
+                con los <a href="terminos.html" target="_blank">Terminos y Condiciones</a>
+            </div>
+
+            <!-- Entrada"enviar" -->
+            <div class="enviar">
+                <button type="submit">CREAR</button>
+            </div>
+        </form>
+        </div>
+    </main>
+
+    <!-- link haciajs -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
